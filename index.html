@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal Details</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+	<script src="https://kit.fontawesome.com/83bf2191e6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="image/logo.png" class="logo">
+				<ul id="sidemenu">
+				<li><a href="#home">home</a></li>
+				<li><a href="#about">about</a></li>
+				<li><a href="#services">services</a></li>
+				<li><a href="#contact">contact</a></li>
+				<i class="fas fa-times" onclick="closemenu"></i>
+			</ul>
+			<i class="fas fa-bars" onclick="openmenu"></i>
+			</nav>
+			<div class="header-text" id="home">
+				<p>FullStack Developer</p>
+				<h1>Hi, I'm <span>Mathan Kumar</span><br> From Tiruppur.</h1>
+			</div>
+		</div>
+	</div>
+
+
+<!--------------about----------->
+<section id="about">
+<div class="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="image/second.jpg">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">About Me</h1>
+				<p>I am a loyal and trustworthy employee who can work alone or as part of a team. I am a quick to learn and willing to adapt to any job. I am a competent, loyal, hard working employee with the ability to achieve tasks when working alone or as part of a team. I am punctual with an excellent attendance record.</p>
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					<p class="tab-links" onclick="opentab('experience')">Experience</p>
+					<p class="tab-links" onclick="opentab('education')">Education</p>
+				</div>
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li><span>HTML-5</span><br>Proficient in HTML5 and CSS3,with the ability to create responsive and visually appealing web pages.</li>
+						<li><span>CSS-3</span><br>Create and modified CSS3 stylesheets to customize website layouts and improve visual design elements.</li>
+						<li><span>MySQL</span><br>SQL queries,enabling efficient data retrieval and manipulation from relation database.</li> 
+						<li><span>Core PHP</span><br>server-side scripting language encoded with HTML to develop Dynamic website, Static website or Web applications.</li>
+						<li><span>Java Script</span><br>Fundamental concepts, such as variables functions and DOM manipulation.</li>
+						<li><span>Word Press</span><br>WordPress is an open-source content management system (CMS) software used to build, modify, and maintain websites. In technical terms, WordPress is written in PHP and run on a MySQL or MariaDB database. In addition, WordPress features include plugins and themes, among others.</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="experience">
+					<ul>
+						<li><span>Tally-ERP9</span><br>I worked as a accountant for six month in KL-Biotech.</li>
+						<li><span>Land Survey</span><br>I worked as a surveyor's assistant for one year. </li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="education">
+					<ul>
+						<li><span>2019-2021</span><br>M.com From park's college,Tiruppur.</li>
+						<li><span>2016-2019</span><br>B.com(CA) From park's college,Tiruppur.</li>
+						<li><span>2015-2016</span><br>HSC From Govt.Her.Sec.School,Tiruppur.</li>
+						<li><span>2012-2013</span><br>SSLC From Govt.Her.Sec.School,Tiruppur..</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+</section>
+
+<!---- services ---->
+
+<section id="services">
+<div>
+	<div class="container">
+		<h1 class="sub-title">My Services</h1>
+		<div class="services-list">
+			<div>
+				<i class="fa-solid fa-code"></i>
+				<h2>Web Design</h2>
+				<p>Ask me what kind of website you want and I will prepare it for you.</p>
+				<a href="#">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-brands fa-ioxhost"></i>
+				<h2>Free hosting</h2>
+				<p>Web hosts store content, like a website, on internet servers. .</p>
+				<a href="#">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-solid fa-lines-leaning"></i>
+				<h2>Free Domain</h2>
+				<p>Domain hosts provide domain names, which are the addresses that help visitors access website content.</p>
+				<a href="#">Learn more</a>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+
+ 
+
+<!--------- contact------->
+
+<section id="contact">
+<div>
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p><i class="fa-solid fa-envelope"></i>Mathanmaddy108@gmail.com</p>
+				<p><i class="fa-solid fa-phone"></i>8610425768</p>
+				<div class="social-icons">
+					<a href="#"><i class="fa-brands fa-facebook"></i></a>
+					<a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+				</div>
+				<a href="image/CV.pdf" download class="btn btn2">Download CV</a>
+			</div>
+			<div class="contact-right">
+			<form method="GET" action="contact.php">
+				<input type="text" name="name" placeholder="Your Name" required>
+				<input type="email" name="email" placeholder="Your Email" required>
+				<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+				<button type="submit" class="btn btn2">Submit</button>
+			</form>  
+		</div>
+	</div>
+	<div class="copyright">
+		<p> copyright <i class="fa fa-at" aria-hidden="true"></i>  Mathankumar.</i></p>
+	</div>
+</div>
+</section>
+<script>
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+	 sidemenu.style.right="0";
+}
+function closemenu(){
+	sidemenu.style.right="-200px"
+}
+
+</script>
+
+</body>
+</html>
