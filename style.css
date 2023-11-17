@@ -78,7 +78,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div{
-	background: #262626;
+	background: #646262;
 	padding: 40px;
 	font-size: 13px;
 	font-weight: 300;
@@ -228,7 +228,7 @@ form input, form textarea{
 	width: 100%;
 	border: 0;
 	outline: none;
-	background: #262626;
+	background: #646262;
 	padding: 15px;
 	margin: 15px 0;
 	color: #fff;
